@@ -4,6 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './containers/Home/Home';
+import AboutUs from './containers/AboutUs/AboutUs';
+import Contacts from './containers/Contacts/Contacts';
 
 function App() {
   return (
@@ -13,8 +15,8 @@ function App() {
         <Route path='/' element={(
           <Home />
         )} />
-        <Route path='/about-us' element={(<p>About ussdsdsds</p>)} />
-        <Route path='/contacts' element={(<p>contacts</p>)} />
+        <Route path='/about-us' element={(<AboutUs/>)} />
+        <Route path='/contacts' element={(<Contacts/>)} />
       </Routes>
     </div>
   );
